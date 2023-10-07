@@ -1,0 +1,102 @@
+.clearfix:after {
+content: "";
+display:block;
+clear: both;
+}
+html {
+min-width: 800px;
+}
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+font-family: Arial,sans-serif;
+font-size: 14px;
+line-height: 1.4;
+color: #333;
+background-color: #fff;
+}
+.header,
+.content-wrapper,
+.container,
+.content,
+.footer {
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+
+display: -o-flex;
+display: flex;
+flex-direction: row;
+}
+.header {
+height: 60px;
+background: #EAC871;
+color: #fff;
+-webkit-box-flex: 0;
+-webkit-flex: none;
+-ms-flex: none;
+flex: none;
+text-align: center;
+}
+.footer {
+height: 40px;
+background: #364850;
+color: #fff;
+-webkit-box-flex: 0;
+-webkit-flex: none;
+-ms-flex: none;
+flex: none;
+text-align: center;
+}
+.content-wrapper {
+margin: 0 auto;
+flex-direction: column;
+height: 100%;
+min-width: 800px;
+max-width: 2000px;
+}
+.container {
+flex-wrap: nowrap;
+flex: 1 0 auto;
+}
+.content {
+width: 100%;
+flex-direction: column;
+flex: 1 1 auto;
+order: 0;
+}
+.sidebar {
+background: #A3786F;
+flex: 0 0 auto;
+}
+.sidebar1 {
+width: 300px;
+
+order: 1;
+height: 648px;
+}
+.lab-list{
+margin: 0;
+padding: 0;
+}
+.lab-list li{
+list-style: none;
+font-size: 20px;
+margin: 5px 0;
+border-bottom: 1px dashed rgba(0,0,0,1);
+padding: 10px;
+transition: all 0.3s ease;
+}
+.lab-list li:hover{
+padding-left: 25px;
+}
+.lab-list a{
+color: #333;
+text-decoration: none;
+}
+.content img{
+width: 1097px;
+height: 574px;
+}
+
